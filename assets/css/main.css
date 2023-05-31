@@ -2841,7 +2841,8 @@ input, select, textarea {
 	#header {
 		/* Header color*/
 		/* Customize for dark theme */
-		background-color: #302f2b;
+		/* background-color: #302f2b; */
+		background-color: whitesmoke;
 		margin-bottom: 30px;
 
 		padding: 3em 0 0.1em 0 ;
@@ -3169,6 +3170,7 @@ input, select, textarea {
 		padding: 0em 0 6em 0 ;
 		background-image: url("../../images/BG_Red.png");
 		background-size: cover;
+		background-attachment: fixed;
 		
 	}
 
