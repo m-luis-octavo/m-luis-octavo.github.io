@@ -2580,24 +2580,25 @@ input, select, textarea {
 	}
 
 		.tiles article {
-			-moz-transition: -moz-transform 0.5s ease, opacity 0.5s ease;
-			-webkit-transition: -webkit-transform 0.5s ease, opacity 0.5s ease;
-			-ms-transition: -ms-transform 0.5s ease, opacity 0.5s ease;
-			transition: transform 0.5s ease, opacity 0.5s ease;
+			-moz-transition: -moz-transform 0.28s ease, opacity 0.28s ease;
+			-webkit-transition: -webkit-transform 0.28s ease, opacity 0.28s ease;
+			-ms-transition: -ms-transform 0.28s ease, opacity 0.28s ease;
+			transition: transform 0.28s ease, opacity 0.28s ease;
 			position: relative;
 			width: calc(33.33333% - 2.5em);
 			margin: 2.5em 0 0 2.5em;
 		}
 
 			.tiles article > .image {
-				-moz-transition: -moz-transform 0.5s ease;
-				-webkit-transition: -webkit-transform 0.5s ease;
-				-ms-transition: -ms-transform 0.5s ease;
-				transition: transform 0.5s ease;
+				-moz-transition: -moz-transform 0.28s ease;
+				-webkit-transition: -webkit-transform 0.28s ease;
+				-ms-transition: -ms-transform 0.28s ease;
+				transition: transform 0.28s ease;
 				position: relative;
 				display: block;
 				width: 100%;
-				border-radius: 4px;
+				/* Curavture of the tiles (default 4) */
+				border-radius: 44px;
 				overflow: hidden;
 			}
 
@@ -2608,10 +2609,10 @@ input, select, textarea {
 
 				.tiles article > .image:before {
 					pointer-events: none;
-					-moz-transition: background-color 0.5s ease, opacity 0.5s ease;
-					-webkit-transition: background-color 0.5s ease, opacity 0.5s ease;
-					-ms-transition: background-color 0.5s ease, opacity 0.5s ease;
-					transition: background-color 0.5s ease, opacity 0.5s ease;
+					-moz-transition: background-color 0.28s ease, opacity 0.28s ease;
+					-webkit-transition: background-color 0.28s ease, opacity 0.28s ease;
+					-ms-transition: background-color 0.28s ease, opacity 0.28s ease;
+					transition: background-color 0.28s ease, opacity 0.28s ease;
 					content: '';
 					display: block;
 					position: absolute;
@@ -2621,15 +2622,18 @@ input, select, textarea {
 					height: 100%;
 					opacity: 1.0;
 					z-index: 1;
-					opacity: 0.8;
+					/* Opacity of the tiles behind */
+					opacity: 1;
 				}
 
+				/* Controls the crosshair on the tiles */
+				/*
 				.tiles article > .image:after {
 					pointer-events: none;
-					-moz-transition: opacity 0.5s ease;
-					-webkit-transition: opacity 0.5s ease;
-					-ms-transition: opacity 0.5s ease;
-					transition: opacity 0.5s ease;
+					-moz-transition: opacity 0.28s ease;
+					-webkit-transition: opacity 0.28s ease;
+					-ms-transition: opacity 0.28s ease;
+					transition: opacity 0.28s ease;
 					content: '';
 					display: block;
 					position: absolute;
@@ -2644,6 +2648,7 @@ input, select, textarea {
 					opacity: 0.25;
 					z-index: 2;
 				}
+				*/
 
 			.tiles article > a {
 				display: -moz-flex;
@@ -2662,10 +2667,10 @@ input, select, textarea {
 				-webkit-justify-content: center;
 				-ms-justify-content: center;
 				justify-content: center;
-				-moz-transition: background-color 0.5s ease, -moz-transform 0.5s ease;
-				-webkit-transition: background-color 0.5s ease, -webkit-transform 0.5s ease;
-				-ms-transition: background-color 0.5s ease, -ms-transform 0.5s ease;
-				transition: background-color 0.5s ease, transform 0.5s ease;
+				-moz-transition: background-color 0.28s ease, -moz-transform 0.28s ease;
+				-webkit-transition: background-color 0.28s ease, -webkit-transform 0.28s ease;
+				-ms-transition: background-color 0.28s ease, -ms-transform 0.28s ease;
+				transition: background-color 0.28s ease, transform 0.28s ease;
 				position: absolute;
 				top: 0;
 				left: 0;
@@ -2697,10 +2702,10 @@ input, select, textarea {
 				}
 
 				.tiles article > a .content {
-					-moz-transition: max-height 0.5s ease, opacity 0.5s ease;
-					-webkit-transition: max-height 0.5s ease, opacity 0.5s ease;
-					-ms-transition: max-height 0.5s ease, opacity 0.5s ease;
-					transition: max-height 0.5s ease, opacity 0.5s ease;
+					-moz-transition: max-height 0.28s ease, opacity 0.28s ease;
+					-webkit-transition: max-height 0.28s ease, opacity 0.28s ease;
+					-ms-transition: max-height 0.28s ease, opacity 0.28s ease;
+					transition: max-height 0.28s ease, opacity 0.28s ease;
 					width: 100%;
 					max-height: 0;
 					line-height: 1.5;
@@ -2721,11 +2726,11 @@ input, select, textarea {
 			}
 
 			.tiles article.style3 > .image:before {
-				background-color: #7bd0c1;
+				background-color: #61ffe2;
 			}
 
 			.tiles article.style4 > .image:before {
-				background-color: #c75b9b;
+				background-color: #57f957;
 			}
 
 			.tiles article.style5 > .image:before {
@@ -2733,11 +2738,19 @@ input, select, textarea {
 			}
 
 			.tiles article.style6 > .image:before {
-				background-color: #8499e7;
+				background-color: #ff6060;
 			}
 
-			.tiles article.style7 > .image::before {
-				background-color: #302f2b;
+			.tiles article.style7 > .image:before {
+				background-color: #aaedff;
+			}
+
+			.tiles article.style8 > .image:before {
+				background-color: #e3d6d6;
+			}
+
+			.tiles article.style9 > .image::before {
+				background-color: #757575;
 			}
 
 			body:not(.is-touch) .tiles article:hover > .image {
@@ -2748,8 +2761,9 @@ input, select, textarea {
 			}
 
 				body:not(.is-touch) .tiles article:hover > .image:before {
+					/* Dark overlay upon hover (default 0.35) */
 					background-color: #333333;
-					opacity: 0.35;
+					opacity: 0.1;
 				}
 
 				body:not(.is-touch) .tiles article:hover > .image:after {
@@ -2846,7 +2860,8 @@ input, select, textarea {
 		background-color: whitesmoke;
 		margin-bottom: 30px;
 
-		padding: 3em 0 0.1em 0 ;
+		/* 16em is the padding on the logo placement */
+		padding: 3em 16em 0 0 ;
 	}
 
 		#header .logo {
