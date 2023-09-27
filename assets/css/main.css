@@ -2599,7 +2599,7 @@ input, select, textarea {
 				display: block;
 				width: 100%;
 				/* Curavture of the tiles (default 4) */
-				border-radius: 0px;
+				border-radius: 4px;
 				overflow: hidden;
 			}
 
@@ -2778,7 +2778,7 @@ input, select, textarea {
 				body:not(.is-touch) .tiles article:hover > .image:before {
 					/* Dark overlay upon hover (default 0.35) */
 					background-color: #333333;
-					opacity: 0.1;
+					opacity: 0;
 				}
 
 				body:not(.is-touch) .tiles article:hover > .image:after {
