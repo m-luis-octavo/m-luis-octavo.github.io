@@ -2577,6 +2577,7 @@ input, select, textarea {
 		flex-wrap: wrap;
 		/* postiion: relative; */
 		margin: -2.5em 0 0 -2.5em;
+		
 	}
 
 		.tiles article {
@@ -2598,7 +2599,7 @@ input, select, textarea {
 				display: block;
 				width: 100%;
 				/* Curavture of the tiles (default 4) */
-				border-radius: 44px;
+				border-radius: 0px;
 				overflow: hidden;
 			}
 
@@ -2681,7 +2682,7 @@ input, select, textarea {
 				border-bottom: 0;
 
 				/* Tiles pre-hover text color. Original: white */
-				color: #252020;
+				color: #ffffff;
 
 				text-align: center;
 				text-decoration: none;
@@ -2694,7 +2695,7 @@ input, select, textarea {
 
 				.tiles article > a:hover {
 					/* Tiles hover text color. Original: white */
-					color: #252020 !important;
+					color: #ffffff !important;
 				}
 
 				.tiles article > a h2 {
@@ -2718,31 +2719,45 @@ input, select, textarea {
 					}
 
 			.tiles article.style1 > .image:before {
-				background-color: #f2505f;
+				background-image: url("../../images/YTInner.png");
+				background-color: #181818;
+				/* background-color: #f2505f; */
 			}
 
 			.tiles article.style2 > .image:before {
-				background-color: #6eef71;
+				background-image: url("../../images/SpotifyInner.png");
+				background-color: #181818;
+				/* background-color: #6eef71; */
 			}
 
 			.tiles article.style3 > .image:before {
-				background-color: #61ffe2;
+				background-image: url("../../images/WhiteboardMintInner.png");
+				background-color: #181818;
+				/* background-color: #61ffe2; */
 			}
 
 			.tiles article.style4 > .image:before {
-				background-color: #57f957;
+				background-image: url("../../images/QuickbitInner.png");
+				background-color: #181818;
+				/* background-color: #57f957; */
 			}
 
 			.tiles article.style5 > .image:before {
-				background-color: #ade1ff;
+				background-image: url("../../images/PeriscoopInner.png");
+				background-color: #181818;
+				/* background-color: #ade1ff; */
 			}
 
 			.tiles article.style6 > .image:before {
-				background-color: #ff6868;
+				background-image: url("../../images/GunpladDestInner.png");
+				background-color: #181818;
+				/* background-color: #ff6868; */
 			}
 
 			.tiles article.style7 > .image:before {
-				background-color: #aaedff;
+				background-image: url("../../images/ConstructionInner.png");
+				background-color: #181818;
+				/* background-color: #aaedff; */
 			}
 
 			.tiles article.style8 > .image:before {
