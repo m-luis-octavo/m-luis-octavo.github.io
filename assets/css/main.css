@@ -2723,7 +2723,7 @@ input, select, textarea {
 					-moz-transition: max-height 0.28s ease, opacity 0.28s ease;
 					-webkit-transition: max-height 0.28s ease, opacity 0.28s ease;
 					-ms-transition: max-height 0.28s ease, opacity 0.28s ease;
-					transition: max-height 0.28s ease, opacity 0.28s ease;
+					transition: max-height 0.60s ease, opacity 0.60s ease;
 					width: 100%;
 					max-height: 0;
 					line-height: 1.5;
